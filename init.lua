@@ -6,7 +6,6 @@ minetest.register_node("mntreform:mnt_wallcarpet", {
     wield_image = "mntreform_mntlogo.png",
     wield_scale = { x=1, y=1, z=0.5 },
     visual_scale = 1.0, 
-    use_texture_alpha = "clip", 
     
 
     sounds = {
@@ -56,6 +55,7 @@ minetest.register_craft({
 minetest.register_node("mntreform:mntcomputer_off", {
     description = "MNT Computer",
     drawtype = "nodebox",
+    use_texture_alpha = "clip",
     groups = {handy = 1, falling_node=1, crush_after_fall=1, mesecon_effector_off = 1, mesecon = 2},
     tiles = {
                "mntreform_mntcomputer_topview_off.png",
@@ -129,6 +129,7 @@ minetest.register_craft({
 minetest.register_node("mntreform:mntcomputer_on", {
     description = "MNT Computer",
     drawtype = "nodebox",
+    use_texture_alpha = "clip",
     groups = {handy=1, falling_node=1, crush_after_fall=1, not_in_creative_inventory=1, mesecon = 2, opaque = 1},
     drop = "node mntreform:mntcomputer_off",
     tiles = {
@@ -349,6 +350,7 @@ minetest.register_craft({
 minetest.register_node("mntreform:frame", {
     description = "MNT Frame",
     drawtype = "nodebox",
+    use_texture_alpha = "clip",
     groups = {handy = 1, falling_node=1, crush_after_fall=1},
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
