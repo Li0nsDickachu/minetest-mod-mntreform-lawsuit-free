@@ -80,7 +80,7 @@ minetest.register_node("mntreform:mntcomputer_off", {
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 1,
-    _doc_items_longdesc = "This is MNT reform. A new kind of computer. Crafting help: you will need 6 different items to make this computer. A screen, frame, heatsink, batteries, main board and a trackball assembly. Use the real mnt for a reference of which colors dye may be needed.",
+    _doc_items_longdesc = "This is MNT reform. A new kind of computer. Crafting help: you will need 6 different items to make this computer. A glass pane, frame, heatsink, batteries, main board and a trackball assembly. Use the real MNT Reform for a reference of which colors of dye may be needed.",
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
