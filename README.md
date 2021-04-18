@@ -2,7 +2,7 @@ This mod adds a minetest version of the MNT Reform computer and a wool wall deco
 It also adds the components that the computer is made of.
 To install this mod simply place a folder with these files into the mods directory of your Minetest version and name the folder "mntreform".
 
-Some of the code is dependent on certain MineClone2 mods, so most of the functionality would likely break without MineClone2 active. It would still be possible to spawn the items.
+This mod is dependent on some mods in MineClone2 to work.
 MineClone2 game download available here:
 https://content.minetest.net/packages/Wuzzy/mineclone2/
 
