@@ -1,6 +1,8 @@
+local S = minetest.get_translator("mntreform")
+
 --mnt logo
 minetest.register_node("mntreform:mnt_wallcarpet", {
-    description = "Mnt Wall Carpet",
+    description = S("Mnt Wall Carpet"),
     inventory_image = "mntreform_mnt_item.png",
     tiles = {"mntreform_mntlogo.png"},
     wield_image = "mntreform_mntlogo.png",
@@ -19,7 +21,7 @@ minetest.register_node("mntreform:mnt_wallcarpet", {
     _mcl_hardness = 0.1,
     _mcl_blast_resistance = 0.1,
     stack_max = 64,
-    _doc_items_longdesc = "A wall carpet is a carpet that can be placed on any surface. It is intended as wall deocration",
+    _doc_items_longdesc = S("A wall carpet is a carpet that can be placed on any surface. It is intended as wall deocration"),
    groups = {handy=1, carpet=1,attached_node=1,flammable=1,fire_encouragement=60, fire_flammability=20, dig_by_water=1,deco_block=1},
 
     -- Required: store the rotation in param2
@@ -53,7 +55,7 @@ minetest.register_craft({
 --mnt computer (off)
 
 minetest.register_node("mntreform:mntcomputer_off", {
-    description = "MNT Computer",
+    description = S("MNT Computer"),
     drawtype = "nodebox",
     use_texture_alpha = "clip",
     groups = {handy = 1, falling_node=1, crush_after_fall=1, mesecon_effector_off = 1, mesecon = 2},
@@ -80,7 +82,7 @@ minetest.register_node("mntreform:mntcomputer_off", {
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 1,
-    _doc_items_longdesc = "This is MNT reform. A new kind of computer. Crafting help: you will need 6 different items to make this computer. A glass pane, frame, heatsink, batteries, main board and a trackball assembly. Use the real MNT Reform for a reference of which colors of dye may be needed.",
+    _doc_items_longdesc = S("This is MNT reform. A new kind of computer. Crafting help: you will need 6 different items to make this computer. A glass pane, frame, heatsink, batteries, main board and a trackball assembly. Use the real MNT Reform for a reference of which colors of dye may be needed."),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
@@ -127,7 +129,7 @@ minetest.register_craft({
 --mnt computer (on)
 
 minetest.register_node("mntreform:mntcomputer_on", {
-    description = "MNT Computer",
+    description = S("MNT Computer"),
     drawtype = "nodebox",
     use_texture_alpha = "clip",
     groups = {handy=1, falling_node=1, crush_after_fall=1, not_in_creative_inventory=1, mesecon = 2, opaque = 1},
@@ -158,7 +160,7 @@ minetest.register_node("mntreform:mntcomputer_on", {
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 1,
-    _doc_items_longdesc = "This is MNT reform. A new kind of computer.",
+    _doc_items_longdesc = S("This is MNT reform. A new kind of computer."),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
@@ -202,13 +204,13 @@ minetest.register_node("mntreform:mntcomputer_on", {
 --batteries
 
 minetest.register_node("mntreform:batteries", {
-    description = "MNT Batteries",
+    description = S("MNT Batteries"),
     drawtype = "nodebox",
     groups = {handy = 1, falling_node=1},
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 64,
-    _doc_items_longdesc = "These batteries power the MNT computer",
+    _doc_items_longdesc = S("These batteries power the MNT computer"),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
@@ -251,13 +253,13 @@ minetest.register_craft({
 --screen
 
 --minetest.register_node("mntreform:screen", {
---    description = "MNT Screen",
+--    description = S("MNT Screen"),
 --    drawtype = "nodebox",
 --    groups = {handy = 1, falling_node=1, crush_after_fall=1},
 --    _mcl_hardness = 2,
 --    _mcl_blast_resistance = 10,
 --    stack_max = 64,
---    _doc_items_longdesc = "This is the official MNT screen",
+--    _doc_items_longdesc = S("This is the official MNT screen"),
 --    walkable = true,
 --    paramtype = "light",
 --    paramtype2 = "facedir",
@@ -300,13 +302,13 @@ minetest.register_craft({
 --heatsink
 
 minetest.register_node("mntreform:heatsink", {
-    description = "MNT Heatsink",
+    description = S("MNT Heatsink"),
     drawtype = "nodebox",
     groups = {handy = 1, falling_node=1},
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 64,
-    _doc_items_longdesc = "This heatsink cools the MNT computer",
+    _doc_items_longdesc = S("This heatsink cools the MNT computer"),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
@@ -348,14 +350,14 @@ minetest.register_craft({
 --frame
 
 minetest.register_node("mntreform:frame", {
-    description = "MNT Frame",
+    description = S("MNT Frame"),
     drawtype = "nodebox",
     use_texture_alpha = "clip",
     groups = {handy = 1, falling_node=1, crush_after_fall=1},
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 64,
-    _doc_items_longdesc = "This is the frame that holds the MNT computer",
+    _doc_items_longdesc = S("This is the frame that holds the MNT computer"),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
@@ -410,13 +412,13 @@ minetest.register_craft({
 --mnt trackball assembly
 
 minetest.register_node("mntreform:trackball_assembly", {
-    description = "MNT Trackball Assembly",
+    description = S("MNT Trackball Assembly"),
     drawtype = "nodebox",
     groups = {handy = 1, falling_node=1},
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 64,
-    _doc_items_longdesc = "This is the trackball assembly for the MNT computer",
+    _doc_items_longdesc = S("This is the trackball assembly for the MNT computer"),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
@@ -459,13 +461,13 @@ minetest.register_craft({
 --mnt mainboard
 
 minetest.register_node("mntreform:mainboard", {
-    description = "MNT Mainboard",
+    description = S("MNT Mainboard"),
     drawtype = "nodebox",
     groups = {handy = 1, falling_node=1},
     _mcl_hardness = 2,
     _mcl_blast_resistance = 10,
     stack_max = 64,
-    _doc_items_longdesc = "This is the mainboard for the MNT computer",
+    _doc_items_longdesc = S("This is the mainboard for the MNT computer"),
     walkable = true,
     paramtype = "light",
     paramtype2 = "facedir",
